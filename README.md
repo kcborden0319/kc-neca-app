@@ -10,6 +10,7 @@ A mobile-friendly React web app for the Kansas City Chapter, National Electrical
 |---|---|
 | **Home** | Mission statement, quick links, and IBEW union partner contact info |
 | **Agreements** | CBA detail screens for LU 95, 124, 453, and 545 with wages, fringes, package totals, and embedded agreement documents |
+| **Directory** | Searchable 2026 membership directory with contractor representative, address, email, and website details |
 | **Meetings** | Full 2026 meeting schedule with KC Chapter and national/regional events |
 | **Staff/Board** | Staff directory with photos and full Board of Directors |
 | **Contact** | Chapter address, phone, email, and office hours |
@@ -115,6 +116,7 @@ All content is currently hardcoded in `src/App.jsx`. To make updates easier in t
 | Data | Suggested file |
 |---|---|
 | CBA wage/fringe data | `src/data/cbas.js` |
+| Membership directory | `src/data/members.js` |
 | Meeting schedule | `src/data/meetings.js` |
 | Staff & board | `src/data/staff.js` |
 | Contact info | `src/data/contact.js` |

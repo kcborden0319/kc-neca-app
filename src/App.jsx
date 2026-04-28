@@ -253,6 +253,53 @@ const unionMeta = {
   "545": { div: "St. Joseph Division",   term: "Jan 1, 2026 – May 31, 2026" },
 };
 
+const members = [
+  { name: "A-1 Electric Service Inc", rep: "Mr. Spud Pritchett", address: "2525-B E Livingston", city: "Springfield", state: "MO", zip: "65803", email: "spud@a-1elec.com", web: "a-1elec.com", url: "https://www.a-1elec.com" },
+  { name: "Action Electric Corp", rep: "Mr. Steven M Dragoo", address: "923 S 9th", city: "St Joseph", state: "MO", zip: "64503", email: "buck@actionelectricstjoe.com", web: "actionelectricstjo.com", url: "https://www.actionelectricstjo.com" },
+  { name: "Alpha Energy & Electric", rep: "Mr. Gabriel Okafor", address: "1100 E. 34th St.", city: "Kansas City", state: "MO", zip: "64109", email: "gabriel@alphaee.com", web: "alphaee.com", url: "https://www.alphaee.com" },
+  { name: "American Legacy Construction", rep: "Mr. Ryan Gobet", address: "1121 SE Broadway Dr.", city: "Lee's Summit", state: "MO", zip: "64081", email: "rgobet@alc-kc.com", web: "alc-kc.com", url: "https://www.alc-kc.com" },
+  { name: "Arrowhead Electric", rep: "Ms. Serina Maring", address: "1101 W. Main, Ste B", city: "Blue Springs", state: "MO", zip: "64105", email: "arrowheadelectricmo@gmail.com", web: "arrowheadelectric.org", url: "https://www.arrowheadelectric.org" },
+  { name: "Black & McDonald", rep: "Mr. Jerry Prochko", address: "6900 Executive Drive", city: "Kansas City", state: "MO", zip: "64120", email: "jprochko@blackandmcdonald.com", web: "blackandmcdonald.com", url: "https://www.blackandmcdonald.com" },
+  { name: "Capital Electric Construction Company Inc", rep: "Mr. Scott Breuer", address: "PO Box 410079", city: "Kansas City", state: "MO", zip: "64141-0079", email: "scott.breuer@capitalelectric.com", web: "capitalelectric.com", url: "https://www.capitalelectric.com" },
+  { name: "Citadel Electric Group Inc", rep: "Mr. Marc Tower", address: "31710 E Colbern Rd", city: "Oak Grove", state: "MO", zip: "64075", email: "mtower@citadelelectric.com", web: "citadelelectric.com", url: "https://www.citadelelectric.com" },
+  { name: "CityWide Electric", rep: "Mr. Jeff Stoneburner", address: "5919 Barton", city: "Shawnee", state: "KS", zip: "66203", email: "jeff@cweinc.net", web: "cweinc.net", url: "https://www.cweinc.net" },
+  { name: "Clayco Electric Co Inc", rep: "Mr. Richard Brull", address: "319 E 11th Ave", city: "N Kansas City", state: "MO", zip: "64116", email: "rich@claycoelectric.com", web: "claycoelectric.com", url: "https://www.claycoelectric.com" },
+  { name: "Electrical Corporation of America Inc", rep: "Mr. Jason King", address: "7320 Arlington", city: "Raytown", state: "MO", zip: "64133", email: "j.king@ecahq.com", web: "ecahq.com", url: "https://www.ecahq.com" },
+  { name: "Empire Electric Services", rep: "Mr. Downey Wilson", address: "101 E. Stone St.", city: "Leeton", state: "MO", zip: "64761", email: "downey.wilson@empire-electric.biz", web: "empire-electric.biz", url: "https://www.empire-electric.biz" },
+  { name: "Enerfab Power & Industrial", rep: "Mr. Nick Cable", address: "309 NW Capital", city: "Lee's Summit", state: "MO", zip: "64086", email: "Nick.cable@enerfab.com", web: "enerfab.com", url: "https://www.enerfab.com" },
+  { name: "Fagan Electric Company Inc", rep: "Mr. Mark Wiswell", address: "313 West 13th St", city: "Joplin", state: "MO", zip: "64804-0602", email: "m.wiswell@faganelectric.com", web: "faganelectric.com", url: "https://www.faganelectric.com" },
+  { name: "GRE Electric, LLC", rep: "Mr. Charles Ibe", address: "7427 Troost Ave, Ste C", city: "Kansas City", state: "MO", zip: "64131", email: "globalrockllc@gmail.com", web: "globalrockllc.com", url: "https://globalrockllc.com" },
+  { name: "J Vangel Electric Inc", rep: "Mr. Jamie Vangel", address: "2006 S Roosevelt #1", city: "Joplin", state: "MO", zip: "64802", email: "jvangelelectric@aol.com", web: "jvangelelectric.net", url: "https://www.jvangelelectric.net" },
+  { name: "Joplin Industrial Electric Inc", rep: "Mr. Jeff Cartright", address: "PO Box 848", city: "Duenweg", state: "MO", zip: "64841", email: "jeff@joplinelectric.com", web: "joplinelectric.com", url: "https://joplinelectric.com" },
+  { name: "K & R Electric Inc", rep: "Mr. Don Stilley", address: "PO Box 6727", city: "Branson", state: "MO", zip: "65615", email: "dstilley@kandrelectric.com", web: "kandrelectric.com", url: "https://www.kandrelectric.com" },
+  { name: "MD Electric", rep: "Ms. Andrea Stoops", address: "PO Box 316", city: "Stewartsville", state: "MO", zip: "64490", email: "andrea@mdelectricllc.biz", web: "mdelectricllc.biz", url: "https://www.mdelectricllc.biz" },
+  { name: "Mark One Electric Company Inc", rep: "Mr. Joseph Privitera", address: "1414 Gennessee St", city: "Kansas City", state: "MO", zip: "64102", email: "joe.privitera@markone.com", web: "markone.com", url: "https://www.markone.com" },
+  { name: "Max Electric Inc", rep: "Ms. Rita Baslock", address: "705 Blue Ridge Blvd", city: "Grandview", state: "MO", zip: "64030", email: "ritab@maxelectric-kc.com", web: "maxelectric-kc.com", url: "https://www.maxelectric-kc.com" },
+  { name: "Miljavac Electric Corporation", rep: "Mr. John M Miljavac", address: "1421 Mitchell Ave", city: "St. Joseph", state: "MO", zip: "64503", email: "joem@miljavac.com", web: "miljavac.com", url: "https://www.miljavac.com" },
+  { name: "North Kansas City Electric Co", rep: "Mr. Michael W Quarles", address: "200 E. 15th Ave.", city: "North Kansas City", state: "MO", zip: "64116", email: "mwquarles@nkce.com", web: "nkce.com", url: "https://www.nkce.com" },
+  { name: "P1 Construction Group", rep: "Mr. Casey Walsh", address: "13605 W. 96th Terr.", city: "Lenexa", state: "KS", zip: "66215", email: "casey.walsh@p1group.com", web: "p1group.com", url: "https://www.p1group.com" },
+  { name: "P1 Service", rep: "Mr. Jeff Gardner", address: "11086 Strang Line Road", city: "Lenexa", state: "KS", zip: "66215", email: "jgardner@p1-service.com", web: "p1-service.com", url: "https://www.p1-service.com" },
+  { name: "PM Contracting", rep: "Ms. Becky Wiseman", address: "4105 E. 143rd St", city: "Grandview", state: "MO", zip: "64030", email: "becky@pmc-kc.com", web: "pmc-kc.com", url: "https://pmc-kc.com" },
+  { name: "Pinnacle Electric", rep: "Mr. Duane Haertling", address: "2302 Highly", city: "St. Joseph", state: "MO", zip: "64506", email: "duane@pinnacleelectricinc.com", web: "pinnacleelectricinc.com", url: "https://www.pinnacleelectricinc.com" },
+  { name: "Price Electric", rep: "Mr. Dennis Price", address: "1323 N. Nias", city: "Springfield", state: "MO", zip: "65802", email: "dp@priceelectric.net", web: "priceelectriccompany.com", url: "https://priceelectriccompany.com" },
+  { name: "Pro Electric L.C.", rep: "Mr. Richard Barchak", address: "510 Miami", city: "Kansas City", state: "KS", zip: "66105", email: "Richardb@proelect.com", web: "proelectriclc.com", url: "https://www.proelectriclc.com" },
+  { name: "Progressive Electronics", rep: "Mr. Christopher Metzler", address: "6102 Arlington", city: "Raytown", state: "MO", zip: "64133", email: "christopherm@pei-kc.com", web: "peikc.com", url: "https://peikc.com" },
+  { name: "R L Yates Electrical Const., Inc.", rep: "Mr. Troy Yates", address: "1401 Burlington St", city: "N Kansas City", state: "MO", zip: "64116-3930", email: "tyates@yateselectric.com", web: "yateselectric.com", url: "https://www.yateselectric.com" },
+  { name: "R/S Electric Corporation", rep: "Mr. Reid Schultz", address: "302 Messanie St", city: "St Joseph", state: "MO", zip: "64502", email: "reid@rselectriccorp.com", web: "rselectriccorp.com", url: "https://www.rselectriccorp.com" },
+  { name: "Ryn Electric", rep: "Ms. Savannah King", address: "1300 SW Main", city: "Lee's Summit", state: "MO", zip: "64064", email: "s.king@rynelectric.com", web: "rynelectric.com", url: "https://www.rynelectric.com" },
+  { name: "SM5 Electric LLC", rep: "Mr. Tylor Strickland", address: "704 Hibby Lane", city: "Bates City", state: "MO", zip: "64011", email: "tstrickland@sm5electric.com", web: "sm5electric.com", url: "https://sm5electric.com" },
+  { name: "Schultz Electric Inc", rep: "Mr. Sam Schultz", address: "1640 Erie", city: "N. Kansas City", state: "MO", zip: "64116", email: "sam@schultzelectric.com", web: "schultzelectric.com", url: "https://www.schultzelectric.com" },
+  { name: "Shaw Electric Company", rep: "Mr. Ryan Blake", address: "3600 Fuller", city: "Kansas City", state: "MO", zip: "64129-1829", email: "rblake@seckc.com", web: "shawelectricco.com", url: "https://www.shawelectricco.com" },
+  { name: "Staco Electric Company", rep: "Ms. Kristin Bilyeu", address: "11030 Hickman Mills Dr.", city: "Kansas City", state: "MO", zip: "64134", email: "kbilyeu@stacoelectric.com", web: "stacoelectric.com", url: "https://www.stacoelectric.com" },
+  { name: "Superior Electrical", rep: "Mr. Chris Head", address: "PO Box 3137", city: "Independence", state: "MO", zip: "64055", email: "chead@superior-elect.com", web: "superior-elect.com", url: "https://www.superior-elect.com" },
+  { name: "Sync Electric", rep: "Ms. Haley Lewis", address: "8111 Paseo", city: "Kansas City", state: "MO", zip: "64131", email: "Haley.lewis@synckc.com", web: "synckc.com", url: "https://www.synckc.com" },
+  { name: "Trinity Power Solutions", rep: "Mr. Billy Swofford", address: "153 Redemption Road", city: "Rogersville", state: "MO", zip: "65742", email: "bswofford@trinitypower.net", web: "trinitypower.net", url: "https://www.trinitypower.net" },
+  { name: "Vazquez Commercial Contracting", rep: "Mr. Brian Paxton", address: "3303 Gillham Road", city: "Kansas City", state: "MO", zip: "64109", email: "brianp@vazquezcc.com", web: "vazquezcc.com", url: "https://www.vazquezcc.com" },
+  { name: "The Waldinger Corp - Springfield Division", rep: "Mr. Rich Horton", address: "1219 E. Division St.", city: "Springfield", state: "MO", zip: "65803", email: "rich.horton@waldinger.com", web: "waldinger.com", url: "https://waldinger.com" },
+  { name: "The Waldinger Corp - St. Joseph Division", rep: "Mr. James Willey", address: "20872 State Route K", city: "St. Joseph", state: "MO", zip: "64505", email: "jamie.willey@waldinger.com", web: "waldinger.com", url: "https://waldinger.com" },
+  { name: "Whatever It Takes Electric", rep: "Mr. John Rolls", address: "9709 E. 56th St.", city: "Raytown", state: "MO", zip: "64133", email: "john@witecinc.com", web: "witeinc.com", url: "https://witeinc.com" },
+];
+
 const cardStyle = {
   background: "#ffffff",
   border: "1px solid #d1d5db",
@@ -295,7 +342,7 @@ function HomeTab({ setTab }) {
       </div>
       <SectionLabel>Quick links</SectionLabel>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(2,minmax(0,1fr))", gap: 8, marginBottom: 14 }}>
-        {[["Agreements","4 active CBAs","cba"],["Meetings","Upcoming events","meetings"]].map(([t,s,id]) => (
+        {[["Agreements","4 active CBAs","cba"],["Directory","Member firms","directory"],["Meetings","Upcoming events","meetings"]].map(([t,s,id]) => (
           <div key={id} onClick={() => setTab(id)} style={{ ...cardStyle, cursor: "pointer", textAlign: "center", padding: "16px 8px" }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: "#0C447C", marginBottom: 3 }}>{t}</div>
             <div style={{ fontSize: 11, color: "#6b7280" }}>{s}</div>
@@ -588,6 +635,92 @@ function MeetingsTab() {
   );
 }
 
+function MembershipDirectoryTab() {
+  const [query, setQuery] = useState("");
+  const normalizedQuery = query.trim().toLowerCase();
+  const filteredMembers = members.filter(member =>
+    [member.name, member.rep, member.address, member.city, member.state, member.zip, member.email, member.web]
+      .join(" ")
+      .toLowerCase()
+      .includes(normalizedQuery)
+  );
+  const alphabet = [...new Set(members.map(member => member.name.charAt(0)))].join(" ");
+
+  return (
+    <div style={{ padding: "14px 14px 20px" }}>
+      <div style={{ background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 12, padding: 14, marginBottom: 14 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", gap: 10, alignItems: "flex-start", marginBottom: 10 }}>
+          <div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: "#111827" }}>Membership Directory</div>
+            <div style={{ fontSize: 12, color: "#374151", lineHeight: 1.5, marginTop: 3 }}>KC Chapter contractor members with 2026 representative and contact details.</div>
+          </div>
+          <div style={{ background: "#0C447C", color: "#ffffff", borderRadius: 10, padding: "7px 9px", minWidth: 58, textAlign: "center" }}>
+            <div style={{ fontSize: 16, fontWeight: 800, lineHeight: 1 }}>{members.length}</div>
+            <div style={{ fontSize: 9, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginTop: 3 }}>Members</div>
+          </div>
+        </div>
+        <input
+          type="search"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search company, rep, city, email, or website"
+          aria-label="Search membership directory"
+          style={{ width: "100%", border: "1px solid #bfdbfe", borderRadius: 9, background: "#ffffff", color: "#111827", fontSize: 13, padding: "10px 11px", outline: "none" }}
+        />
+      </div>
+
+      <SectionLabel>Browse</SectionLabel>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, marginBottom: 8 }}>
+        <div style={{ fontSize: 11, color: "#6b7280", lineHeight: 1.5 }}>A-Z: {alphabet}</div>
+        <div style={{ fontSize: 11, fontWeight: 700, color: "#0C447C", whiteSpace: "nowrap" }}>{filteredMembers.length} shown</div>
+      </div>
+
+      {filteredMembers.length ? (
+        filteredMembers.map(member => {
+          const mailingAddress = `${member.address}, ${member.city}, ${member.state} ${member.zip}`;
+          return (
+            <div key={member.name} style={cardStyle}>
+              <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                <div style={{ width: 38, height: 38, borderRadius: 8, background: "#dbeafe", border: "1px solid #bfdbfe", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800, color: "#1e3a5f", flexShrink: 0 }}>
+                  {member.name.charAt(0)}
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "#111827", lineHeight: 1.35 }}>{member.name}</div>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: "#0C447C", marginTop: 5 }}>{member.rep}</div>
+                  <div style={{ fontSize: 11, color: "#4b5563", lineHeight: 1.45, marginTop: 4 }}>{mailingAddress}</div>
+                  <div style={{ fontSize: 11, fontWeight: 600, color: "#6b7280", marginTop: 4, overflowWrap: "anywhere" }}>{member.email}</div>
+                  <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 8 }}>
+                    <a href={`mailto:${member.email}`} style={{ fontSize: 11, color: "#185FA5", fontWeight: 700, textDecoration: "none" }}>
+                      Email
+                    </a>
+                    {member.url ? (
+                      <a href={member.url} target="_blank" rel="noreferrer" style={{ fontSize: 11, color: "#185FA5", fontWeight: 700, textDecoration: "none" }}>
+                        {member.web}
+                      </a>
+                    ) : (
+                      <span style={{ fontSize: 11, color: "#6b7280", fontWeight: 600 }}>Website not listed</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })
+      ) : (
+        <div style={{ ...cardStyle, textAlign: "center", padding: "22px 16px" }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: "#111827" }}>No members found</div>
+          <div style={{ fontSize: 11, color: "#6b7280", marginTop: 4 }}>Try a company name, representative, city, email, or website domain.</div>
+        </div>
+      )}
+
+      <div style={{ background: "#fffbeb", border: "1px solid #fcd34d", borderRadius: 10, padding: "10px 12px", marginTop: 10 }}>
+        <div style={{ fontSize: 11, color: "#92400e", fontWeight: 600 }}>Directory listings are maintained by KC Chapter, NECA.</div>
+        <div style={{ fontSize: 11, color: "#92400e", marginTop: 2 }}>Contact details were added from the 2026 membership workbook.</div>
+      </div>
+    </div>
+  );
+}
+
 function StaffTab() {
   const staff = [
     {init:"KC", name:'Kenneth "K.C." Borden', title:"Executive Director", sub:"Kansas City Chapter, NECA", photo:"data:image/jpeg;base64,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"},
@@ -678,6 +811,7 @@ export default function App() {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "cba", label: "Agreements" },
+    { id: "directory", label: "Directory" },
     { id: "meetings", label: "Meetings" },
     { id: "staff", label: "Staff/Board" },
     { id: "contact", label: "Contact" },
@@ -685,6 +819,7 @@ export default function App() {
   const content = {
     home: <HomeTab setTab={setTab} />,
     cba: <CBATab />,
+    directory: <MembershipDirectoryTab />,
     meetings: <MeetingsTab />,
     staff: <StaffTab />,
     contact: <ContactTab />,

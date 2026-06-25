@@ -63,8 +63,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 14px 16px;
   /* keep the logo clear of the status bar / notch */
-  padding-top: env(safe-area-inset-top);
+  padding-top: calc(14px + env(safe-area-inset-top));
 }
 
 .app-content {

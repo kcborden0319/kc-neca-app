@@ -116,43 +116,43 @@ const cbas = {
   "124": {
     local: "IBEW Local Union 124",
     desc: "Inside Agreement — Kansas City Division (Zone I), Kansas City Chapter NECA",
-    eff: "September 1, 2025",
-    exp: "August 30, 2026",
+    eff: "August 31, 2026",
+    exp: "August 29, 2027",
     div: "Kansas City Division",
     jur: "Zone I: KC Metro area (KS & MO), Jackson, Clay, Platte, Cass counties & surrounding",
     wages: [
-      ["Journeyman wireman / technician", "$54.01/hr"],
-      ["Lead foreman", "$55.51/hr"],
-      ["Foreman", "$57.01/hr"],
-      ["General foreman", "$58.51/hr"],
-      ["Field general foreman", "$60.01/hr"],
+      ["Journeyman wireman / technician", "$57.01/hr"],
+      ["Lead foreman", "$58.51/hr"],
+      ["Foreman", "$60.01/hr"],
+      ["General foreman", "$61.51/hr"],
+      ["Field general foreman", "$63.01/hr"],
     ],
     fringes: [
       ["Vacation & Holiday fund", "7.00% of gross wages"],
       ["NEBF", "3.00% of gross wages"],
-      ["Health & Welfare", "$10.25/hr"],
-      ["Pension", "$4.55/hr"],
-      ["Annuity", "$7.00/hr"],
+      ["Health & Welfare", "$10.35/hr"],
+      ["Pension", "$5.00/hr"],
+      ["Annuity", "$8.00/hr"],
       ["Apprenticeship & Training", "$0.65/hr"],
       ["LMCC & NLMCC", "$0.18/hr"],
       ["Admin. Maintenance Fund (AMF)", "$0.15/hr (reduces to $0.10 after 75,000 hr cap)"],
     ],
     totals: [
-      ["JW total package cost", "$82.19/hr"],
-      ["Lead foreman total package cost", "$83.84/hr"],
-      ["Foreman total package cost", "$85.49/hr"],
-      ["General foreman total package cost", "$87.14/hr"],
-      ["Field general foreman total package cost", "$88.79/hr"],
+      ["JW total package cost", "$87.04/hr"],
+      ["Lead foreman total package cost", "$88.69/hr"],
+      ["Foreman total package cost", "$90.34/hr"],
+      ["General foreman total package cost", "$91.99/hr"],
+      ["Field general foreman total package cost", "$93.64/hr"],
     ],
     grandTotals: [
-      ["JW grand total (incl. taxes/insurance)", "$96.02/hr"],
-      ["Lead foreman grand total", "$98.05/hr"],
-      ["Foreman grand total", "$100.09/hr"],
-      ["General foreman grand total", "$102.12/hr"],
-      ["Field general foreman grand total", "$104.16/hr"],
+      ["JW grand total (incl. taxes/insurance)", "$101.64/hr"],
+      ["Lead foreman grand total", "$103.67/hr"],
+      ["Foreman grand total", "$105.71/hr"],
+      ["General foreman grand total", "$107.74/hr"],
+      ["Field general foreman grand total", "$109.78/hr"],
     ],
     chips: ["Inside wireman","JW Technician","Lead foreman","Foreman","General foreman","Field general foreman","Apprentice (5 yr)"],
-    note: "Revised 4/21/2026. Zone I rates shown. Costs calculated by KC Chapter NECA.",
+    note: "Revised 8/14/2026. Zone I rates shown. Costs calculated by KC Chapter NECA.",
   },
   "453": {
     local: "IBEW Local Union 453",
@@ -235,7 +235,7 @@ const cbas = {
 
 const unionMeta = {
   "95":  { div: "Joplin Division",       term: "Jun 1, 2025 – May 31, 2026" },
-  "124": { div: "Kansas City Division",  term: "Sep 1, 2025 – Aug 30, 2026" },
+  "124": { div: "Kansas City Division",  term: "Aug 31, 2026 – Aug 29, 2027" },
   "453": { div: "Springfield Division",  term: "Sep 1, 2025 – Aug 31, 2026" },
   "545": { div: "St. Joseph Division",   term: "Jan 1, 2026 – May 31, 2026" },
 };
@@ -485,7 +485,7 @@ function CBATab() {
       <SectionLabel>Collective bargaining agreements</SectionLabel>
       {["95","124","453","545"].map(lu => {
         const m = unionMeta[lu];
-        const jw = { "95":"$32.25/hr", "124":"$54.01/hr", "453":"$34.00/hr", "545":"$43.20/hr" }[lu];
+        const jw = { "95":"$32.25/hr", "124":"$57.01/hr", "453":"$34.00/hr", "545":"$43.20/hr" }[lu];
         return (
           <div key={lu} onClick={() => setSel(lu)} style={{ ...cardStyle, cursor: "pointer" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
